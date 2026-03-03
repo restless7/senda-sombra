@@ -6,40 +6,40 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 export function ServicesSection() {
     const services = [
         {
-            title: "Space Clearing",
-            description: "Energy purification for your home or office. We use traditional smudge and sound healing to reset the energetic blueprint of your space.",
-            price: "From $150",
+            title: "Limpieza Energética",
+            description: "Purificación energética para tu hogar u oficina. Utilizamos sahumerio tradicional y sanación sonora para resetear el plano energético de tu espacio.",
+            price: "Desde $150",
             icon: <Home className="w-8 h-8" />,
             image: "service-clearing.jpg"
         },
         {
-            title: "Sensory Design",
-            description: "Custom interior styling consultation focusing on textures, scents, and light to create a sanctuary that supports your mental well-being.",
-            price: "From $300",
+            title: "Diseño Sensorial",
+            description: "Consultoría de interiorismo personalizada enfocada en texturas, aromas y luz para crear un santuario que apoye tu bienestar mental.",
+            price: "Desde $300",
             icon: <Sparkles className="w-8 h-8" />,
             image: "service-design.jpg"
         },
         {
-            title: "Private Ritual",
-            description: "Guided private ceremonies for new beginnings, closures, or grounding. Includes a custom curated Senda & Sombra kit.",
-            price: "From $200",
+            title: "Ritual Privado",
+            description: "Ceremonias privadas guiadas para nuevos comienzos, cierres o grounding. Incluye un kit Senda & Sombra curado a tu medida.",
+            price: "Desde $200",
             icon: <User className="w-8 h-8" />,
             image: "service-ritual.jpg"
         }
     ];
 
     return (
-        <section className="bg-senda-dustyPink/30 py-24" id="services">
+        <section className="bg-senda-dustyPink/30 py-24" id="servicios">
             <div className="container mx-auto px-6">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <span className="text-senda-rust font-josefin font-semibold tracking-wider uppercase text-sm mb-4 block">
-                        Experiences
+                        Experiencias
                     </span>
                     <h2 className="text-3xl md:text-4xl font-farela font-bold text-senda-mauve mb-6">
-                        Rituals & <span className="italic">Spaces</span>
+                        Rituales y <span className="italic">Espacios</span>
                     </h2>
                     <p className="text-senda-mauve/70 font-josefin text-lg">
-                        Beyond objects, we offer guidance to transform the energy of your life.
+                        Más allá de los objetos, ofrecemos guía para transformar la energía de tu vida.
                     </p>
                 </div>
 
@@ -69,9 +69,11 @@ export function ServicesSection() {
                                 </p>
                             </CardContent>
                             <CardFooter className="px-8 pb-8 pt-0">
-                                <Button variant="ghost" className="p-0 text-senda-mauve hover:text-senda-rust hover:bg-transparent font-josefin group">
-                                    Book Experience <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                                </Button>
+                                <a href="#talleres">
+                                    <Button variant="ghost" className="p-0 text-senda-mauve hover:text-senda-rust hover:bg-transparent font-josefin group">
+                                        Reservar Experiencia <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                                    </Button>
+                                </a>
                             </CardFooter>
                         </Card>
                     ))}

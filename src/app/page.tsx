@@ -20,13 +20,13 @@ export default async function SendaSombraLandingPage() {
   return (
     <div className="min-h-screen bg-senda-cream font-josefin text-senda-mauve scroll-smooth">
       <HeroSection />
+      <ClassesSection classes={classes} />
       <DisconnectSection />
       <ProductShowcaseSection />
       <ServicesSection />
       <ShopSection />
       <PhilosophySection />
       <OfferSection />
-      <ClassesSection classes={classes} />
       <FooterSection />
     </div>
   );

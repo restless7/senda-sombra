@@ -1,50 +1,50 @@
 import React from 'react';
-import { ShoppingBag, ArrowRight } from 'lucide-react';
+import { ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
 export function ShopSection() {
     const categories = [
         {
-            name: "Botanical Candles",
+            name: "Velas Botánicas",
             imageColor: "bg-senda-rust/20",
-            items: "4 Variations",
+            items: "4 Variaciones",
             image: "product-candle-set.jpg"
         },
         {
-            name: "Essential Oils",
+            name: "Aceites Esenciales",
             imageColor: "bg-senda-sage/20",
-            items: "6 Blends",
+            items: "6 Mezclas",
             image: "product-oil-collection.jpg"
         },
         {
-            name: "Smudge Bundles",
+            name: "Sahumerios",
             imageColor: "bg-senda-ochre/20",
-            items: "3 Sizes",
+            items: "3 Tamaños",
             image: "product-smudge-kit.jpg"
         },
         {
-            name: "Natural Textures",
+            name: "Texturas Naturales",
             imageColor: "bg-senda-mauve/20",
-            items: "Linen & Clay",
-            image: "philosophy-bg.jpg" // Using philosophy bg as texture
+            items: "Lino & Arcilla",
+            image: "philosophy-bg.jpg"
         }
     ];
 
     return (
-        <section className="bg-senda-cream py-24" id="shop">
+        <section className="bg-senda-cream py-24" id="tienda">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                     <div className="max-w-xl">
                         <span className="text-senda-sage font-josefin font-semibold tracking-wider uppercase text-sm mb-4 block">
-                            The Apothecary
+                            El Apotecario
                         </span>
                         <h2 className="text-3xl md:text-4xl font-farela font-bold text-senda-mauve">
-                            Curated for <span className="text-senda-rust">Conscious Living</span>
+                            Curado para una <span className="text-senda-rust">Vida Consciente</span>
                         </h2>
                     </div>
                     <Button variant="outline" className="border-senda-mauve/30 text-senda-mauve hover:bg-senda-mauve hover:text-white transition-colors font-josefin">
-                        View All Collections
+                        Ver Todas las Colecciones
                     </Button>
                 </div>
 
@@ -60,7 +60,7 @@ export function ShopSection() {
                                 />
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
                                     <Button size="sm" className="bg-white/90 text-senda-mauve hover:bg-white backdrop-blur-sm shadow-sm">
-                                        Explore
+                                        Explorar
                                     </Button>
                                 </div>
                             </div>

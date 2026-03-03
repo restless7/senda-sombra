@@ -6,24 +6,23 @@ export function DisconnectSection() {
     const painPoints = [
         {
             icon: <Wind className="w-6 h-6" />,
-            title: "Lost in the Noise",
-            description: "The outside world floods in. Notifications, demands, endless scrolling. Your space becomes an extension of the chaos."
+            title: "Perdido en el Ruido",
+            description: "El mundo exterior nos inunda. Notificaciones, demandas, scroll infinito. Tu espacio se convierte en una extensión del caos."
         },
         {
             icon: <Heart className="w-6 h-6" />,
-            title: "Forgotten Rituals",
-            description: "When did lighting a candle become a luxury? The small acts of presence have been replaced by convenience."
+            title: "Rituales Olvidados",
+            description: "¿Cuándo encender una vela se convirtió en un lujo? Los pequeños actos de presencia han sido reemplazados por la conveniencia."
         },
         {
             icon: <Sparkles className="w-6 h-6" />,
-            title: "Spaces Without Intention",
-            description: "Your home should be a refuge, not just a backdrop. Every corner deserves conscious design."
+            title: "Espacios Sin Intención",
+            description: "Tu hogar debería ser un refugio, no solo un fondo. Cada rincón merece un diseño consciente."
         }
     ];
 
     return (
         <section className="bg-senda-dustyPink py-24 relative overflow-hidden">
-            {/* Background Image */}
             <div className="absolute inset-0 z-0 select-none pointer-events-none">
                 <img
                     src="/images/SENDA-Y-SOMBRA/disconnect-bg.jpg"
@@ -32,7 +31,6 @@ export function DisconnectSection() {
                 />
             </div>
 
-            {/* Subtle watermark - Rabbit Isotype placeholder */}
             <div className="absolute right-10 top-1/2 -translate-y-1/2 opacity-5">
                 <div className="w-64 h-64 border-4 border-senda-mauve rounded-full flex items-center justify-center">
                     <span className="font-farela text-6xl text-senda-mauve">S&S</span>
@@ -42,14 +40,14 @@ export function DisconnectSection() {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <span className="text-senda-rust font-josefin font-semibold tracking-wider uppercase text-sm mb-4 block">
-                        The Disconnect
+                        La Desconexión
                     </span>
                     <h2 className="text-3xl md:text-4xl font-farela font-bold text-senda-mauve mb-6">
-                        Is your home your <span className="italic">sanctuary</span>?
+                        ¿Es tu hogar tu <span className="italic">santuario</span>?
                     </h2>
                     <p className="text-senda-mauve/70 font-josefin text-lg">
-                        We understand. In a world that demands everything,
-                        finding peace at home feels impossible.
+                        Te entendemos. En un mundo que lo exige todo,
+                        encontrar paz en casa parece imposible.
                     </p>
                 </div>
 
@@ -72,6 +70,13 @@ export function DisconnectSection() {
                             </CardContent>
                         </Card>
                     ))}
+                </div>
+
+                {/* CTA to workshops */}
+                <div className="text-center mt-16">
+                    <a href="#talleres" className="inline-block bg-senda-rust text-white font-josefin font-semibold px-8 py-4 rounded-full hover:bg-senda-rust/90 transition-all duration-300 hover:scale-105 shadow-lg">
+                        Descubre Nuestros Talleres →
+                    </a>
                 </div>
             </div>
         </section>
