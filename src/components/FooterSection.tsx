@@ -18,9 +18,20 @@ export function FooterSection() {
                     </a>
                 </div>
 
-                <p className="text-senda-cream/50 font-josefin text-sm">
-                    © {new Date().getFullYear()} Senda & Sombra. Todos los derechos reservados.
-                </p>
+                <div className="flex flex-col items-center gap-4 mt-8">
+                    <p className="text-senda-cream/50 font-josefin text-sm">
+                        © {new Date().getFullYear()} Senda & Sombra. Todos los derechos reservados.
+                    </p>
+                    <a
+                        href="https://www.apexaisolutions.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-xs text-senda-cream/50 hover:text-senda-cream transition-colors duration-300 font-josefin tracking-wide"
+                    >
+                        <img src="/images/apex-logo.png" alt="Apex AI Solutions" className="w-4 h-4 object-contain brightness-0 invert opacity-50" />
+                        Powered by Apex AI Solutions
+                    </a>
+                </div>
             </div>
         </footer>
     );
